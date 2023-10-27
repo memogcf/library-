@@ -1,0 +1,17 @@
+// Add a book to the book list
+const bookList = document.querySelector("#book-list");
+const book = {
+    title: "The blue elephant ",
+    author: "Douglas Adams",
+    year: 1979,
+    description: "A comedy science fiction series created by Douglas Adams.",
+    category:" كتب الرعب"
+};
+
+bookList.innerHTML += `<li>
+    <h3>${book.title}</h3>
+    <p>${book.author}</p>
+    <p>${book.year}</p>
+    <p>${book.description}</p>
+    <p>${book.category}</p>
+</li>`;
