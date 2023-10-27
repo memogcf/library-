@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Library Website</h1>
+
+    <section id="books">
+        <h2>Books</h2>
+        <ul id="book-list"></ul>
+    </section>
+
+    <section id="book-filter">
+        <h2>Book Filter</h2>
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+        </select>
+    </section>
+
+    <section id="add-book">
+        <h2>Add Book</h2>
+        <form id="add-book-form">
+            <input type="text" name="title" placeholder="Title">
+            <input type="text" name="author" placeholder="Author">
+            <input type="number" name="year" placeholder="Year">
+            <input type="text" name="description" placeholder="Description">
+            <select name="category">
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+            </select>
+            <input type="submit" value="Add Book">
+        </form>
+    </section>
+
+    <section id="view-count">
+        <h2>View Count</h2>
+        <p>Total book views: <span id="total-view-count"></span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
