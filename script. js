@@ -15,3 +15,25 @@ bookList.innerHTML += `<li>
     <p>${book.description}</p>
     <p>${book.category}</p>
 </li>`;
+// Add a book filter
+const categoryFilter = document.querySelector("#category-filter");
+
+categoryFilter.addEventListener("change", function() {
+    const category = categoryFilter.value;
+
+    // Update the book list
+    bookList.innerHTML = "";
+
+    for (const book of books) {
+        if (book.category === category) {
+            bookList.innerHTML += `<li>
+                <h3>${book.title}</h3>
+                <p>${book.author}</p>
+                <p>${book.year}</p>
+                <p>${book.description}</p>
+                <p>${book.category}</p>
+            </li>`;
+        }
+    }
+});
+
